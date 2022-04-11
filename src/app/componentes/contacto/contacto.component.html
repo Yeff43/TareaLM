@@ -1,0 +1,58 @@
+<div class="my-2 text-center">
+  <h1>CONTACTO</h1>
+</div>
+
+<h3>{{prueba}}</h3> <!-- Asi se llama una variable dentro del html -->
+
+<div class="container m-4">
+  <!--<h4>{{dameNombre()}}</h4>-->
+  <div style="border-style: solid;border-top: solid; border-radius: 7px">
+    <div class="col">
+      <div class="py-2" style="border-style: solid">
+        <h3>Nombre: {{persona.nombre}}</h3>
+        <hr>
+        <h3>Apellidos: {{persona.apellidos}}</h3>
+        <hr>
+        <h3>Edad: {{persona.edad}}</h3>
+        <hr>
+        <h3>Trabajo: {{persona.trabajo}}</h3>
+        <hr>
+        <h3>Es Mayor: {{persona.esMayor}}</h3>
+      </div>
+      <div class="py-2" style="border-style: solid">
+        <h3>Nombre: {{persona.nombre}}</h3>
+        <hr>
+        <h3>Apellidos: {{persona.apellidos}}</h3>
+        <hr>
+        <h3>Edad: {{persona.edad}}</h3>
+        <hr>
+        <h3>Trabajo: {{persona.trabajo}}</h3>
+        <hr>
+        <h3>Es Mayor: {{persona.esMayor}}</h3>
+      </div>
+      <div class="py-2" style="border-style: solid">
+        <h3>Nombre: {{persona.nombre}}</h3>
+        <hr>
+        <h3>Apellidos: {{persona.apellidos}}</h3>
+        <hr>
+        <h3>Edad: {{persona.edad}}</h3>
+        <hr>
+        <h3>Trabajo: {{persona.trabajo}}</h3>
+        <hr>
+        <h3>Es Mayor: {{persona.esMayor}}</h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Binding: Property Binding -->
+  <!-- Por medio de corchetes podemos pasar una variable o una funcion
+  a una propiedad/atributo de un html -->
+  <div>
+    <label>Nombre</label>
+    <input type="text" [placeholder]="dameNombre()"> <!-- Retorna el valor de una funcion -->
+
+    <!-- Data Binding: Event Binding -->
+    <!-- Igual que el anterior pero en vez de atributos para Eventos -->
+    <button class="btn btn-danger" (click)="cambiaNombre()"><span>Cambiar Nombre</span></button>
+  </div>
+</div>

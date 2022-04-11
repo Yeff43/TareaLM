@@ -1,0 +1,35 @@
+<div class="container my-3">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmemegenerator.net%2Fimg%2Fimages%2F600x600%2F8311420%2Fllama-ola-ke-ase-1.jpg&f=1&nofb=1" alt="Ola Ke Ase">
+</div>
+
+<div class="container text-center my-3">
+  <h1>Lorem!</h1>
+  <p style="text-indent:4%">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lectus sapien,
+    posuere euismod dolor sed, feugiat viverra nisl. Suspendisse lacinia ut neque in egestas. Etiam tincidunt ac sem
+    vitae sollicitudin. Mauris tortor diam, suscipit at fringilla ut, scelerisque quis metus. Ut eget placerat eros,
+    sed interdum odio. Ut at nulla sodales, venenatis felis et, blandit leo.</p>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 my-2 justify-content-center" *ngFor="let p of personas">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmemegenerator.net%2Fimg%2Fimages%2F600x600%2F8311420%2Fllama-ola-ke-ase-1.jpg&f=1&nofb=1" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{p.nombre}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"> Apellidos: {{p.apellidos}}</li>
+          <li class="list-group-item">Edad: {{p.edad}}</li>
+          <li class="list-group-item">Empleo: {{p.trabajo}}</li>
+          <li class="list-group-item">Es mayor: {{p.esMayor}}</li>
+        </ul>
+        <div class="card-body">
+          <a href="#" class="card-link">Perfil</a>
+          <a href="#" class="card-link">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
