@@ -3,6 +3,9 @@ import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./componentes/home/home.component";
 import {ContactoComponent} from "./componentes/contacto/contacto.component";
 import {NavbarComponent} from "./componentes/navbar/navbar.component";
+import {EpisodesComponent} from "./componentes/episodes/episodes.component";
+import {CharactersComponent} from "./componentes/characters/characters.component";
+import {LocationsComponent} from "./componentes/locations/locations.component";
 
 const routes: Routes = [// Aqui van los distintos componentes
 //Que nuestro router outler va a manejar
@@ -18,6 +21,21 @@ const routes: Routes = [// Aqui van los distintos componentes
     path: 'contacto',
     pathMatch:'full',
     component: ContactoComponent
+  },
+  {
+    path: 'characters',
+    pathMatch:'full',
+    component: CharactersComponent
+  },
+  {
+    path: 'episodes',
+    pathMatch:'full',
+    component: EpisodesComponent
+  },
+  {
+    path: 'locations',
+    pathMatch:'full',
+    component: LocationsComponent
   },
   //LOS DE DEFAULT(Vacio) Y ERROR AL ULTIMO
   {//Componente Vacio, establece cual es la pagina a cargar por defecto

@@ -1,0 +1,25 @@
+<div class="text-center m-md-3">
+  <h1>Locations</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 my-md-3 justify-content-center" *ngFor="let l of locations">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">Id: {{l.id}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name: {{l.name}}</li>
+          <li class="list-group-item">Type: {{l.type}}</li>
+          <li class="list-group-item">Episode: {{l.dimension}}</li>
+          <li class="list-group-item">Created: {{l.created | date:'dd/MM/yyyy'}}</li>
+        </ul>
+        <select class="list-group-item">
+        <option value="" *ngFor="let l of l.residents ;let i = index"><a [href]="l">{{l}}</a></option>
+      </select>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="text-center m-md-3">
+  <h1>Episodes</h1>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 my-md-3 justify-content-center" *ngFor="let e of episodes">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">{{e.name}}</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Name: {{e.name}}</li>
+          <li class="list-group-item">On Air: {{e.air_date | date: 'dd/MM/yyyy'}}</li>
+          <li class="list-group-item">Episode: {{e.episode}}</li>
+        </ul>
+        <select class="list-group-item">
+          <option value="" *ngFor="let e of e.characters;let i = index"><a [href]="e">{{e}}</a></option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
